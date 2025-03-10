@@ -27,3 +27,15 @@ This application enables users to query information contained within PDF documen
 **7. Basic Retrieval-Augmented Generation (RAG) Application**
 
 Built on top of a vector store, this application implements a retriever that extracts relevant context from document collections. When users pose questions, the system retrieves the most pertinent information and supplies it to the LLM through a chat prompt template, enabling more accurate and contextually informed responses.
+
+**8. Conversational RAG Application**
+
+In addition to what a basic RAG system can do, this application leverages the permanent memory 'ChatMessageHistory' tool provided by LangChain in order to make advanced RAG system which can conextualize the input query based on past conversation between LLM model and users.
+
+**9. Simple Agent using LangGraph**
+
+This application creates a simple agent which acts as brain to pass through user query between a LLM model and a search engine. This agent sends the query to search engine 'TavilySearch' when user ask something for which LLM models does not have answer. For e.g. anything happnes recently. This helps in overcoming the training cut off date problem of LLM models
+
+**10. Deploying a Simple LLm Application using LangServe**
+
+This demonstrates the deployment of LLM applications using LangServe
